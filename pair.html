@@ -123,7 +123,7 @@
 
     .input-container button:hover {
       background-color: red;
-      border-color: green;
+      border-color: blue;
     }
 
     @media (max-width: 500px) {
@@ -202,7 +202,7 @@
       let obj = document.getElementById("copy");
       await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
       obj.innerText = "COPIED";
-      obj.style = "color:blue;font-weight:bold";
+      obj.style = "color:red;font-weight:bold";
       obj.size = "5";
       setTimeout(() => {
         obj.innerText = text;
